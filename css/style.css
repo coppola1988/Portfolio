@@ -203,7 +203,7 @@ p{
 
 #skills .skill{
     float: left;
-    width: 33.33%;
+    width: 25%;
     text-align: center;
     padding: 35px;
 }
@@ -212,6 +212,33 @@ p{
     font-size: 30px;
     color: coral;
 }
+
+#skills .fa-sharp{
+    font-size: 30px;
+    color: coral;
+}
+
+.waether{
+    max-width: 250px;
+    max-height: 100px;
+}
+
+.skill p{
+    color: coral;
+}
+
+
+#skills h2{
+    text-align: center;
+    color: coral;
+    padding-bottom: 0;
+    
+    border-color: #3A3A3A;
+    
+
+}
+
+
 
 
 /*------ Footer ------ */
