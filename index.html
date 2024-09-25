@@ -5,29 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hier findest du das komplette Daniele Coppola Portfolio">
     <meta name="keywords" content="Daniele Coppola Portfolio">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="https://kit.fontawesome.com/18eccc3a45.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-
     <title>Daniele Coppola Portfolio Website</title>
-    
-   
-    
-    
 </head>
 <body>
         <header>
             <nav id="main-nav">
                 <div class="standard-container">
-                    <h1>Daniele Coppola</h1>
-                    <ul>
-                        <li><a class="active-page" href="index.html">Startseite</a></li>
-                        <li><a href="contact.html">Kontakt</a></li>
+                    <div class="menu">
+                         <a href="#welcome"><h1>Daniele Coppola</h1></a>
+                        <button id="submit-btn" type="submit"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                    <ul class="navbar-menu hidden">
+                        <li><a class="active-page" href="#about">Über mich</a></li>
+                        <li><a href="#contact-options">Kontakt</a></li>
                     </ul>
                 </div>
             </nav>
-            
         </header>
         <section id="welcome">
                 <div class="standard-container">
@@ -37,14 +34,13 @@
                     <div class="welcome-content">
                         <h2><span class="text-highlighted"> Willkommen</span> <br> auf meiner Seite!</h2>
                             <p>Mein Name ist Daniele Coppola,
-                            
                             als angehender Softwareentwickler mit Erfahrung im Vertrieb 
                             und Kundenservice habe ich in verschiedenen Branchen wertvolle Kenntnisse gesammelt.
                             Nun folge ich meiner Leidenschaft für die Softwareentwicklung.
                             
                             Auf dieser Seite erhalten Sie Einblicke in meine bisherigen Arbeiten, Projekte und meine Reise in die Welt der Softwareentwicklung.
                             Lassen Sie uns gemeinsam die digitale Zukunft gestalten!</p>
-                        <a class="btn" href="https://github.com/coppola1988"><i class="fa-brands fa-github"></i> Github</a>
+                        <a class="btn" href="https://github.com/coppola1988" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
                     </div>
                 </div>
         </section>
@@ -54,7 +50,7 @@
             <div class="about-content">
                 <h2><span class="text-highlighted">Über </span>mich </h2>
                 <p>
-                    Ich befinde mich derzeit in einer spannenden Phase meiner Beruflichen Laufbahn. 
+                    Ich befinde mich derzeit in einer spannenden Phase meiner beruflichen Laufbahn. 
                     Nach vielen Jahren in vertriebsorientierten Positionen habe ich 2023 den Entschluss gefasst, 
                     meiner Leidenschaft für Technologie zu folgen und eine Umschulung zum Fachinformatiker für Anwendungsentwicklung zu beginnen.
                 </p>
@@ -115,23 +111,25 @@
         </div>
     </section>
 
-          
     <section id="contact-options">
-        <div class="standard-container">
-            <div class="contact-option"><span class="material-symbols-outlined">phone_in_talk</span>
-                <h3>Telefon</h3>
-                <p>Rufen Sie mich gerne unter der Telefonnummer 0176/84360679
-                     an</p>
-            </div>
-            <div class="contact-option"><span class="material-symbols-outlined">mail</span>
-                <h3>E-Mail</h3>
-                <p>Kontaktieren Sie mich gerne unter meiner E-Mail Adresse danielecoppola@gmx.net</p>
-            </div>
+        <div class="border-color">
+            <div class="standard-container">
+                <div class="contact-option"><span class="material-symbols-outlined">phone_in_talk</span>
+                    <h3>Telefon</h3>
+                    <p>Rufen Sie mich gerne unter der Telefonnummer 0176/84360679
+                         an</p>
+                </div>
+                <div class="contact-option"><span class="material-symbols-outlined">mail</span>
+                    <h3>E-Mail</h3>
+                    <p>Kontaktieren Sie mich gerne unter meiner E-Mail Adresse danielecoppola@gmx.net</p>
+                </div>
+        </div>
     </section>
     <footer id="main-footer">
         <div class="footer-container">
             <p>&copy; 2024 Daniele Coppola, All rights reserved | <a href="#">Impressum</a>  | <a href="#">Datenschutzerklärung</a> </p>
         </div>
-    </footer>
+    </footer>s
+    <script src="index.js"></script>
 </body>
 </html>
