@@ -22,7 +22,6 @@ footer {
     display: flex;
     flex-direction: column;
     position: relative;
-  
 }
 
 .hidden{
@@ -34,7 +33,6 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
-
 
 #submit-btn{
     height: 2.5rem;
@@ -90,7 +88,6 @@ header{
     width: 37.5rem;
     margin: 0 auto;
     border-bottom: 5px solid #468585;
-
 }
 
 #main-nav h1{
@@ -182,7 +179,6 @@ p{
     color: white;
     padding: 2rem;
     text-align: center;
-
 }
 
 #about .about-img{ 
@@ -210,13 +206,11 @@ p{
     padding-top: 4rem;
     padding-bottom: 4rem;
     background-color: #545158;
-    
 }
 
 .skillset{
     display: flex;
     background-color: #545158;
-    
 }
 
 #skills .skill{
@@ -253,7 +247,6 @@ p{
     border-style: solid ;
     border-color: #545158;
     border-width: 1rem;
-    
 }
 
 #contact-options .contact-option{
@@ -264,7 +257,6 @@ p{
     background-color: #545158;
     min-height: 30rem;
     /* border-radius: 10px; */
-    
 }
 
 #contact-options .contact-option h3{
