@@ -78,6 +78,13 @@ footer {
     font-size: 4rem;
 }
 
+#welcome .welcome-content p{
+    width: 40ch;
+    
+    
+    
+}
+
 img{
     width: 100%;
 }
@@ -188,6 +195,10 @@ p{
     text-align: center;
 }
 
+.about-content p{
+    text-align: left;
+}
+
 #about .about-img{ 
     width: 100%;
     padding: 5rem 3rem 3rem 3rem;
@@ -204,6 +215,14 @@ p{
 
 #about span{
     font-size: 4rem;
+}
+.about-paragraph{
+    color: white;
+    width: 108rem;
+    margin: 0 auto;
+    display: block;
+    margin-top: -3rem;
+    padding: 0 2rem;
 }
 
 
@@ -257,9 +276,19 @@ p{
     
 }
 
+.border-color{
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+    width: 50%;
+}
+
+
 #contact-options .contact-option{
-    /* width: 100%; */
-    margin: 1%;
+    display: block;
+    
+    width: 100%;
+    
     text-align: center;
     padding: 3.5rem;
     background-color: #545158;
@@ -329,6 +358,94 @@ p{
         margin: 0 auto;
     }
 
+    /*------ NavbarButton ------ */
+    #submit-btn{
+        display:block;
+        height: 2.5rem;
+        width: 4rem;
+        margin-left: 10rem;
+    }
+
+    .navbar-menu{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .hidden{
+        display: none;
+    }
+    
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    
+
+    /*------ Welcome ------ */
+    #welcome {
+        background-image: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0,0.1)), url(img/BannerLight.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .standard-container.wel {
+        display: flex;
+        align-items: center; /* Bild und Text vertikal zentrieren */
+        justify-content: space-between; /* Bild und Text auf gleicher Höhe */
+        width: 100%;
+    }
+    
+    #welcome span{
+        font-size: 6rem;
+    }
+    
+    #welcome .welcome-img{
+        width: 40%;
+        
+    }
+    #welcome .welcome-content{
+        padding-top: 8rem;
+        width: 60%;
+        padding-left: 5rem;
+    }
+    
+    
+    #welcome .welcome-img img {
+        border-radius: 50%;
+        width:100%;
+    }
+    
+    #welcome .welcome-content h2{
+        font-size: 4.5rem;
+        
+    }
+
+    #welcome .welcome-content p{
+        width: 40ch;
+        
+        
+        
+    }
+
+    
+    img{
+        width: 100%;
+    }
+    
+    header{
+        display: flex;
+        justify-content:center;
+    }
+
+    /*------ Navbar ------ */
+    
     #main-nav{
         position: fixed;
         background-color:  #545158;
@@ -336,8 +453,219 @@ p{
         margin: 0 auto;
         border-bottom: 5px solid #468585;
     }
-}
+    
+    #main-nav h1{
+        color: white;
+        padding-top: 20px;
+        font-size: 1.5rem;
+        padding-left: 2rem;
+    }
+    
+    #main-nav a{
+        color: white;
+    }
+    
+    #main-nav ul{
+        list-style: none;
+    
+    }
+    
+    #main-nav ul li a{
+        display:block;
+        font-size: 2.0rem;
+        padding: 1rem;
+        text-align: right;
+    }
+    
+    #main-nav ul li a:hover{
+        background-color:  #468585;
+        color: white;
+    }
+    
+    #main-nav ul li a.active-page{
+        background-color:   #468585;
+        color: white;
+    }
+    
+    h1,h2,h3,h4,h5,h6 {
+        padding-bottom: 2rem;
+    }
+    
+    a {
+        color: #545158;
+        text-decoration: none;
+    }
+    
+    p{
+        font-size: 1.6rem; /* Einheitliche Schriftgröße für alle Paragraphen */
+        line-height: 1.6; /* Abstand zwischen den Zeilen */
+        width: 50ch; /* Anpassung der Textbreite */
+        
+    }
+    
+     #standard-container{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
 
+    .text-highlighted{
+        color: #468585;
+    }
+    
+    /*------ Github Button ------ */
+
+
+    
+
+    .btn {
+        display: block;
+        font-size: 20px;
+        background-color:#545158;
+        color: #fdfdfd;
+        padding: 1rem 1.5rem;
+        text-align: center;
+        border-radius: 5px;
+        margin: 1.5rem 0;
+    }
+    
+    .btn:hover{
+        background-color: #468585;
+        color: white;
+    } 
+    
+    
+    /*------ About ------ */
+    
+    #about{
+        background-color: #545158;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    
+    
+    
+    #about .about-content{
+        color: white;
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    .about-content p{
+        text-align: left;
+        width: 80ch;
+        padding-bottom: 0;
+        
+    }
+    
+    #about .about-img{ 
+        width: 100%;
+        padding: 5rem 3rem 3rem 3rem;
+    }
+    
+    #about .about-img img{
+        width: 100%;
+        border-radius: 10px; 
+    }    
+    
+    #about .about-content h2{
+        font-size: 5rem;
+        padding-bottom: 3rem;
+    }
+    
+    #about span{
+        font-size: 5rem;
+    }
+    #about .about-paragraph p{
+        color: white;
+        padding: 4rem 4rem;
+        width: 80ch;
+    }
+    
+    
+    /*------ Skills ------ */
+    
+    #skills{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        background-color: #545158;
+    }
+    
+    #skills .skillset{
+        display: flex;
+        background-color: #545158;
+        
+    }
+    
+    
+    #skills .fa-brands{
+        font-size: 4rem;
+        color: #dfdfdf;
+        width: 12rem;
+    }
+    
+    .skill p{
+        position: relative;
+        left: -16rem;
+        padding-top: 1rem;
+        color: #468585;
+    }
+    
+    
+    
+    #skills h2{
+        text-align: center;
+        color: #468585;
+        padding-bottom: 0;
+        font-size: 3rem;
+        border-color: #545158;
+    }
+
+    /*------ Contact ------ */
+
+    #contact-options .contact-option {
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+
+        
+    }
+
+    #contact-options .contact-option p{
+        padding: 2rem 5rem ;
+        width: 70ch;
+        
+        
+    }
+    
+    
+    
+    /*------ Footer ------ */
+    
+    #main-footer{
+        background-color: #545158;
+        min-height: 12rem;
+        padding-top: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #main-footer p{
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    
+    #main-footer p a{
+        color: white;
+        font-size: 1.5rem;
+    }
 
 
 
@@ -365,8 +693,9 @@ p{
 
     .navbar-menu{
         display: flex;
-        flex-direction: row; /*<-----*/
-        position: relative;
+        flex-direction: row; 
+        position:fixed;
+        padding-left: 100rem;
     }
     
 
@@ -428,7 +757,8 @@ p{
         font-size: 5rem;
     }
 
-    .welcome-content p{
+    #welcome .welcome-content p{
+        width: 60ch;
         text-align: center;
     }
     
@@ -454,7 +784,7 @@ p{
         padding-top: 20px;
         font-size: 2rem;
         padding-left: 2rem;
-        padding-right: 70rem;
+        padding-right: 90rem;
     }
     
     #main-nav a{
@@ -518,7 +848,7 @@ p{
         padding: 1rem 1.5rem;
         text-align: center;
         border-radius: 5px;
-        margin: 1.5rem 0;
+        margin: 0 0;
     }
 
     .fa-github{
@@ -534,56 +864,34 @@ p{
     /* About */
     
     #about{
-        background-color: #545158;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-    }
-    
-    #about .about-content{
-        color: white;
-        padding: 2rem;
-        /* text-align: center; */
-        width: 60%;
-    }
-    
-    #about .about-img{ 
-        width: 40%;
-        padding: 5rem 3rem 3rem 3rem;
-    }
-    
-    #about .about-img img{
-        width: 100%;
-        border-radius: 10px; 
-    }    
-    
-    #about .about-content h2{
-        font-size: 4rem;
-    }
-
-    .about-content p{
-        text-align: left;
-    }
-    
-    #about span{
-        font-size: 4rem;
-    }
-
-    .about-paragraph{
-        width: 108rem;
-        margin: 0 auto;
         display: block;
-        margin-top: -3rem;
-        padding: 0 2rem;
+        width: 100%;
     }
 
-    .about-paragraph p{
-        padding-top: 0;
-        margin-top: 0;
-        width: 93ch;
-        color: white;
-        font-size: 2rem;
-        
+
+    #about .about-content{
+        width: 50%; 
     }
+
+    #about .about-img{
+        width: 50%;
+    }
+
+    #about .about-content p{
+        width: 50ch;
+    }
+
+    #about .about-paragraph{
+        display: flex;
+        flex-direction: row;
+        padding: 0 0;
+    }
+
+    #about .about-paragraph p{ 
+        padding: 3rem 2rem;
+    }
+
+   
     
     /* Skills */
     
@@ -647,33 +955,37 @@ p{
         border-style: solid ;
         border-color: #dfdfdf;
         border-width:1rem;
-        padding: 3.5rem ;
         background-color: #545158;
-        min-height: 30rem;
+        min-height: 35rem;
+        padding-right: 2rem;
+    }
+
+    .contact-option{
+        margin: 0 0;
     }
     
-    #contact-options .contact-option h3{
+    /* #contact-options .contact-option h3{
         font-size: 2.5rem;
         color: #468585;
         padding-top: 1.5rem;
         padding: 3rem 3rem;
         
         
-    }
+    } */
     
-    #contact-options .contact-option p{
+    /* #contact-options .contact-option p{
         color: white;
         line-height: 1.7em;
         
         padding: 2rem 6rem 2rem 2rem ;
         
-    }
+    } */
     
-    #contact-options .material-symbols-outlined{
+    /* #contact-options .material-symbols-outlined{
         font-size: 5rem;
         color: #dfdfdf;
         
-    } 
+    }  */
     
     
     /*------ Footer ------ */
@@ -703,7 +1015,7 @@ p{
     /*------ Hilfsklassen ------ */
 .standard-container{
     
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
     align-items: center;
     max-width: 1080px;
     margin: 0 auto;
@@ -714,6 +1026,15 @@ p{
     
 
 }
+
+
+
+
+
+
+
+
+
 
 
 
