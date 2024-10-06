@@ -65,7 +65,7 @@ section {
 }
 #welcome .welcome-img{
     width: 100%;
-    padding-top: 3rem;
+    padding: 7rem 0 3rem 0;
 }
 
 
@@ -426,6 +426,7 @@ p{
     
     #welcome .welcome-img{
         width: 40%;
+        padding: 0;
         
     }
     #welcome .welcome-content{
@@ -437,6 +438,7 @@ p{
     
     #welcome .welcome-img img {
         width:100%;
+        margin-bottom: 20rem;
     }
     
     #welcome .welcome-content h2{
@@ -721,6 +723,7 @@ p{
     #welcome .welcome-img img {
         width: 100%;
         border-radius: 10px;
+       
     }
     
     #welcome .welcome-content h2{
