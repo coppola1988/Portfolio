@@ -5,6 +5,9 @@
     margin: 0px;
     font-size: 62.5%;
 }
+body{
+    background-color: #545158;
+}
 
 /* Mobile Version */
 
@@ -13,10 +16,6 @@ section {
     margin: 0 auto;
 }
 
-footer {
-    width: 37.5rem;
-    margin: 0 auto;
-}
 
 .navbar-menu{
     display: flex;
@@ -25,24 +24,23 @@ footer {
 }
 
 
-
-
 .hidden{
     display: none;
 }
 
 .menu{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding:0 2rem
 }
 
 #submit-btn{
     display:block;
     height: 2.5rem;
     width: 4rem;
-    margin-left: 10rem;
 }
+
 #welcome {
     background-image: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0,0.1)), url(img/BannerLight.png);
     background-repeat: no-repeat;
@@ -58,7 +56,10 @@ footer {
 }
 
 #welcome .welcome-content{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: rgb(49, 49, 49);
 }
@@ -69,9 +70,9 @@ footer {
 
 
 #welcome .welcome-img img {
-    padding: 55px 0;
+    /* padding: 55px 0; */
     width: 100%;
-    border-radius: 50%;
+    border-radius: 10px;
 }
 
 #welcome .welcome-content h2{
@@ -85,9 +86,6 @@ footer {
     
 }
 
-img{
-    width: 100%;
-}
 
 header{
     display: flex;
@@ -106,7 +104,7 @@ header{
     color: white;
     padding-top: 20px;
     font-size: 1.5rem;
-    padding-left: 2rem;
+    padding-left: 0;
 }
 
 #main-nav a{
@@ -134,6 +132,7 @@ header{
     background-color:   #468585;
     color: white;
 }
+
 
 h1,h2,h3,h4,h5,h6 {
     padding-bottom: 2rem;
@@ -184,7 +183,7 @@ p{
 #about{
     background-color: #545158;
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    /* padding-bottom: 5rem; */
 }
 
 
@@ -201,7 +200,7 @@ p{
 
 #about .about-img{ 
     width: 100%;
-    padding: 5rem 3rem 3rem 3rem;
+    padding: 0 3rem 3rem 3rem;
 }
 
 #about .about-img img{
@@ -223,7 +222,7 @@ p{
     margin: 0 auto;
     display: block;
     margin-top: -3rem;
-    padding: 0 2rem;
+    padding: 4rem 2rem;
 }
 
 
@@ -231,7 +230,7 @@ p{
 
 #skills{
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 10rem;
     background-color: #545158;
 }
 
@@ -282,24 +281,17 @@ p{
     
 }
 
-/* .border-color{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    
-} */
 
 
 #contact-options .contact-option{
+    border:4px solid white;
     display: block;
     flex-direction: column;
     width: 100%;
-    
     text-align: center;
     padding: 3.5rem;
     background-color: #545158;
     min-height: 30rem;
-    /* border-radius: 10px; */
     
 }
 
@@ -325,14 +317,41 @@ p{
     
 }  
 
-.contact-option{
+#contact-options .contact-option2{
+    margin-top: 1rem;
     border:4px solid white;
-    margin-top: 2rem;
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 3.5rem;
+    background-color: #545158;
+    min-height: 30rem;
+}
+.border-color{
+    background-color: #545158;
+}
+
+#contact-options .contact-option2 p{
+    color: white;
+    line-height: 1.7em;
+    padding: 0;
+    text-align: center;
+    margin-left: -2rem;
+    
+}
+#contact-options .contact-option2 h3{
+    font-size: 2.5rem;
+    color: #468585;
+    padding-top: 1.5rem;
+    
 }
 
 /*------ Footer ------ */
 
 #main-footer{
+    width: 37.5rem;
+    margin: 0 auto;
     background-color: #545158;
     min-height: 12rem;
     padding-top: 4rem;
@@ -349,7 +368,7 @@ p{
     width: 100%;
 }
 
-#main-footer p a{
+#main-footer a{
     color: white;
     font-size: 1rem;
 }
@@ -370,13 +389,7 @@ p{
     }
 
     /*------ NavbarButton ------ */
-    #submit-btn{
-        display:block;
-        height: 2.5rem;
-        width: 4rem;
-        margin-left: 10rem;
-    }
-
+  
     .navbar-menu{
         display: flex;
         flex-direction: column;
@@ -385,12 +398,6 @@ p{
     
     .hidden{
         display: none;
-    }
-    
-    .menu{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
     }
     
     
@@ -429,7 +436,6 @@ p{
     
     
     #welcome .welcome-img img {
-        border-radius: 50%;
         width:100%;
     }
     
@@ -445,10 +451,7 @@ p{
         
     }
 
-    
-    img{
-        width: 100%;
-    }
+
     
     header{
         display: flex;
@@ -465,13 +468,7 @@ p{
         border-bottom: 5px solid #468585;
     }
     
-    #main-nav h1{
-        color: white;
-        padding-top: 20px;
-        font-size: 1.5rem;
-        padding-left: 2rem;
-    }
-    
+   
     #main-nav a{
         color: white;
     }
@@ -521,7 +518,7 @@ p{
         justify-content: center;
         align-items: center;
     }
-    
+
 
     .text-highlighted{
         color: #468585;
@@ -634,8 +631,6 @@ p{
         color: #468585;
     }
     
-    
-    
     #skills h2{
         text-align: center;
         color: #468585;
@@ -644,50 +639,17 @@ p{
         border-color: #545158;
     }
 
-    /*------ Contact ------ */
-
-    #contact-options .contact-option {
-        display: flex;
-        flex-direction: column ;
-        align-items: center;
-
-        
-    }
-
-    #contact-options .contact-option p{
-        padding: 2rem 5rem ;
-        width: 70ch;
-        
-        
-    }
-    
-    
-    
-    /*------ Footer ------ */
     
     #main-footer{
-        background-color: #545158;
-        min-height: 12rem;
-        padding-top: 4rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        width:76.8rem;
     }
-    
+
     #main-footer p{
-        color: white;
-        text-align: center;
-        font-size: 1.5rem;
-        width: 100%;
-    }
-    
-    #main-footer p a{
-        color: white;
         font-size: 1.5rem;
     }
-
-
+    #main-footer a{
+        font-size: 1.5rem;
+    }
 
 
 
@@ -710,32 +672,20 @@ p{
         display: none;
     }
     
-
     .navbar-menu{
         display: flex;
         flex-direction: row; 
-        /* position:fixed; */
-        /* padding-left: 80rem; */
     }
     #nav-main{
         display: flex;
         
     }
 
-    
-    
-
-    
-    
     .menu{
         display: flex;
         width: 108rem;
-        /* flex-wrap: flex-end;
-        gap: 2rem;
-        list-style: none;*/
-        justify-content: space-around; 
+        justify-content: space-between; 
         align-items: center;
-        
     }
 
     #submit-btn{
@@ -746,10 +696,10 @@ p{
         background-image: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0,0.1)), url(img/BannerLight.png);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 80vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
-        padding: 2rem;
+        padding-top: 15rem;
     }
     
     #welcome span{
@@ -765,34 +715,25 @@ p{
     }
     #welcome .welcome-img{
         width: 40%;
-        /* padding-top: 3rem; */
     }
     
-    .wel{
-        padding: 10rem 3rem;
-        
-    }
     
     #welcome .welcome-img img {
-        
-        padding: 55px 0;
         width: 100%;
-        border-radius: 50%;
+        border-radius: 10px;
     }
     
     #welcome .welcome-content h2{
         font-size: 5rem;
+        width: 20ch;
     }
 
     #welcome .welcome-content p{
-        width: 60ch;
+        width: 50ch;
         text-align: center;
     }
     
-    img{
-        width: 100%;
-    }
-    
+
     header{
         display: flex;
         justify-content: center;
@@ -861,6 +802,7 @@ p{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        
     }
     
     .text-highlighted{
@@ -979,33 +921,15 @@ p{
         border-color: #545158;
     }
     
-    #contact-options{
-        background-color: #545158;
-    }
 
-    #contact-options .border-color{
-        display: flex;
-       
-        justify-content: center;
-        text-align: center;
+    
+    #contact-options .contact-option2{
+        margin-top: 0;
+    }
+    #special-contact{
         gap: 1rem;
-        
-    }
-    
-    #contact-options .contact-option{
-        border-style: solid ;
-        border-color: #dfdfdf;
-        border-width:1rem;
-        background-color: #545158;
-        min-height: 35rem;
-        padding-right: 2rem;
-        width: 50%;
     }
 
-    .contact-option{
-        margin: 0 0;
-    }
-    
     /* #contact-options .contact-option h3{
         font-size: 2.5rem;
         color: #468585;
@@ -1033,16 +957,17 @@ p{
     /*------ Footer ------ */
     
     #main-footer{
-        background-color: #545158;
-        min-height: 12rem;
-        padding-top: 4rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        width:108rem;
+    }
+
+    #main-footer p{
+        font-size: 2rem;
+    }
+    #main-footer a{
+        font-size: 2rem;
     }
     
-    #main-footer p{
+    /* #main-footer p{
         color: white;
         text-align: center;
         font-size: 1.5rem;
@@ -1052,7 +977,7 @@ p{
     #main-footer p a{
         color: white;
         font-size: 1.5rem;
-    }
+    }  */
 
     /*------ Hilfsklassen ------ */
 .standard-container{
@@ -1062,7 +987,7 @@ p{
     max-width: 1080px;
     margin: 0 auto;
     display: flex;
-    gap: 7rem;
+    gap: 5rem;
     
 }
     
@@ -1072,9 +997,20 @@ p{
 
 
 
+@media screen and (min-width:2560px){
+    
 
+    section {
+        width: 144vw;
+        margin: 0 auto;
+    }
+    
+    footer {
+        width: 144vw;
+        margin: 0 auto;
+    }
 
-
+    
 
 
 
